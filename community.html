@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>宠伴 - 社区</title>
+  <link rel="stylesheet" href="css/style.css?v=20260605">
+</head>
+<body>
+
+<!-- ===== 顶部导航栏 ===== -->
+<header class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/狗狗.svg" alt="宠伴" style="width:40px;height:40px;">
+    宠伴
+  </a>
+
+  <nav class="nav-links">
+    <a href="index.html">首页</a>
+    <a href="detail.html">详情</a>
+    <a href="community.html" class="active">社区</a>
+    <a href="shop.html">商城</a>
+  </nav>
+
+  <div class="nav-actions">
+    <div class="nav-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="text" placeholder="搜索宠物、商品...">
+    </div>
+    <div class="nav-avatar" title="个人中心">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </div>
+  </div>
+
+  <div class="nav-toggle">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- ===== 页面主体 ===== -->
+<main class="page-body">
+
+  <!-- ===== B. 首屏 Banner 区 ===== -->
+  <section class="hero-banner">
+    <img src="images/44.jpg" alt="Hero Banner" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+<div class="hero-content">
+      <div class="hero-corgi-circle">
+        
+        
+        
+        
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== C. 宠物社区板块 ===== -->
+  <section class="section community-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>宠物社区</h2>
+        <div class="down-arrows">
+          <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 2 12 10 4 2"/></svg>
+          <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 2 12 10 4 2"/></svg>
+        </div>
+      </div>
+
+      <!-- 右侧悬浮侧边栏 -->
+      <div class="floating-sidebar">
+        <div class="sidebar-avatar" title="个人中心">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M26 28v-3a6 6 0 00-6-6H12a6 6 0 00-6 6v3"/><circle cx="16" cy="10" r="6"/></svg>
+        </div>
+        <div class="sidebar-pill">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10" cy="10" r="8"/><path d="M10 6v4l3 3"/></svg>
+          萌宠社区
+        </div>
+        <div class="sidebar-pill">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M3 7h14"/><path d="M7 3v14"/></svg>
+          宠物百科
+        </div>
+        <div class="sidebar-pill">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 2v4M10 14v4M2 10h4M14 10h4"/><rect x="6" y="6" width="8" height="8" rx="1"/></svg>
+          掌上医生
+        </div>
+        <div class="sidebar-pill">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10" cy="10" r="8"/><path d="M7 9a3 3 0 006 0"/></svg>
+          智能问答
+        </div>
+      </div>
+
+      <!-- 2x2 卡片网格 -->
+      <div class="community-grid">
+        <!-- 左上：暹罗猫 -->
+        <div class="community-card">
+          <div class="card-bg" style="overflow:hidden;">
+            <img src="images/41.jpg" alt="暹罗猫" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="card-tag-hot">热门推荐</div>
+          <div class="card-play">
+            <svg viewBox="0 0 14 16" fill="currentColor"><polygon points="1,0 14,8 1,16"/></svg>
+          </div>
+          <div class="card-overlay">
+            <div class="card-overlay-top">
+              <div class="card-user">
+                <div class="user-avatar">
+                  <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="7" r="4"/><path d="M17 19c0-4-3.1-6-7-6s-7 2-7 6"/></svg>
+                </div>
+                <span class="user-name">jennieya</span>
+              </div>
+              <div class="card-like">
+                <svg viewBox="0 0 20 18" fill="currentColor"><path d="M10 18l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.18L10 18z"/></svg>
+                5万+
+              </div>
+            </div>
+            <span class="card-subtitle">优雅神秘的暹罗猫，聪明又粘人的小话痨</span>
+          </div>
+        </div>
+
+        <!-- 右上：布偶猫 -->
+        <div class="community-card">
+          <div class="card-bg" style="overflow:hidden;">
+            <img src="images/29.JPG" alt="布偶猫" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="card-play">
+            <svg viewBox="0 0 14 16" fill="currentColor"><polygon points="1,0 14,8 1,16"/></svg>
+          </div>
+          <div class="card-overlay">
+            <div class="card-overlay-top">
+              <div class="card-user">
+                <div class="user-avatar">
+                  <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="7" r="4"/><path d="M17 19c0-4-3.1-6-7-6s-7 2-7 6"/></svg>
+                </div>
+                <span class="user-name">豹豹猫</span>
+              </div>
+              <div class="card-like">
+                <svg viewBox="0 0 20 18" fill="currentColor"><path d="M10 18l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.18L10 18z"/></svg>
+                6万+
+              </div>
+            </div>
+            <span class="card-subtitle">温柔甜美的布偶猫，猫界小仙女</span>
+          </div>
+        </div>
+
+        <!-- 左下：医院里的金毛 -->
+        <div class="community-card">
+          <div class="card-bg" style="overflow:hidden;">
+            <img src="images/10.JPG" alt="医院里的金毛" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="card-play">
+            <svg viewBox="0 0 14 16" fill="currentColor"><polygon points="1,0 14,8 1,16"/></svg>
+          </div>
+          <div class="card-overlay">
+            <div class="card-overlay-top">
+              <div class="card-user">
+                <div class="user-avatar">
+                  <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="7" r="4"/><path d="M17 19c0-4-3.1-6-7-6s-7 2-7 6"/></svg>
+                </div>
+                <span class="user-name">金毛家长</span>
+              </div>
+              <div class="card-like">
+                <svg viewBox="0 0 20 18" fill="currentColor"><path d="M10 18l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.18L10 18z"/></svg>
+                3万+
+              </div>
+            </div>
+            <span class="card-subtitle">金毛在宠物医院安心接受治疗</span>
+          </div>
+        </div>
+
+        <!-- 右下：狗狗合照 -->
+        <div class="community-card">
+          <div class="card-bg" style="overflow:hidden;">
+            <img src="images/23.JPG" alt="狗狗合照" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="card-play">
+            <svg viewBox="0 0 14 16" fill="currentColor"><polygon points="1,0 14,8 1,16"/></svg>
+          </div>
+          <div class="card-overlay">
+            <div class="card-overlay-top">
+              <div class="card-user">
+                <div class="user-avatar">
+                  <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="7" r="4"/><path d="M17 19c0-4-3.1-6-7-6s-7 2-7 6"/></svg>
+                </div>
+                <span class="user-name">爱狗人士</span>
+              </div>
+              <div class="card-like">
+                <svg viewBox="0 0 20 18" fill="currentColor"><path d="M10 18l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.18L10 18z"/></svg>
+                4万+
+              </div>
+            </div>
+            <span class="card-subtitle">欢乐的狗狗聚会，最温暖的陪伴时光</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== D. 宠物百科板块 ===== -->
+  <section class="section encyclopedia-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>宠物百科</h2>
+        <div class="down-arrows">
+          <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 2 12 10 4 2"/></svg>
+          <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 2 12 10 4 2"/></svg>
+        </div>
+      </div>
+
+      <div class="encyclopedia-doc-cards">
+        <!-- 左卡：狗狗呼吸急促 -->
+        <div class="encyclopedia-doc-card fade-in-up">
+          <div class="doc-card-title">狗狗突然呼吸急促的原因</div>
+          <div class="doc-card-img" style="position:relative;overflow:hidden;">
+            <img src="images/19.JPG" alt="狗狗呼吸急促" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="doc-card-bottom">
+            <div class="doc-card-desc">
+              狗狗呼吸急促可能是中暑、心脏病、气管塌陷、过敏反应或疼痛引起的。特别是在夏季高温或剧烈运动后，短鼻犬种如法斗、巴哥更容易出现呼吸困难。发现异常请立即降温并尽快就医，延误治疗可能造成不可逆损伤。
+            </div>
+            <button class="btn btn-primary">点击咨询</button>
+            <button class="btn btn-outline">点击收藏</button>
+          </div>
+        </div>
+
+        <!-- 中卡：犬窝咳 vs 犬副流感（放大） -->
+        <div class="encyclopedia-doc-card featured fade-in-up">
+          <div class="doc-card-title">怎么判断是"犬窝咳"还是"犬副流感"</div>
+          <div class="doc-card-img" style="position:relative;overflow:hidden;">
+            <img src="images/39.JPG" alt="犬窝咳vs犬副流感" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="doc-card-bottom">
+            <div class="encyclopedia-compare">
+              <div class="compare-col">
+                <h5>犬窝咳</h5>
+                <ul>
+                  <li>干咳、阵发性</li>
+                  <li>咳声如鹅叫</li>
+                  <li>流鼻涕</li>
+                  <li>精神尚可</li>
+                </ul>
+              </div>
+              <div class="compare-col">
+                <h5>犬副流感</h5>
+                <ul>
+                  <li>湿咳、持续发热</li>
+                  <li>流脓鼻涕</li>
+                  <li>精神萎靡</li>
+                  <li>食欲下降</li>
+                </ul>
+              </div>
+            </div>
+            <button class="btn btn-primary">点击咨询</button>
+            <button class="btn btn-outline">点击收藏</button>
+          </div>
+        </div>
+
+        <!-- 右卡：猫咪尿血 -->
+        <div class="encyclopedia-doc-card fade-in-up">
+          <div class="doc-card-title">猫咪尿血的原因及应对</div>
+          <div class="doc-card-img" style="position:relative;overflow:hidden;">
+            <img src="images/2.JPG" alt="猫咪尿血" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="doc-card-bottom">
+            <div class="doc-card-desc">
+              猫咪尿血常见原因包括：泌尿道感染、膀胱结石、自发性膀胱炎(FIC)、尿道堵塞等。公猫尤其容易发生尿道堵塞，属于急症，需立即就医。日常应确保猫咪充足饮水，选择湿粮为主，减少应激因素，定期体检预防泌尿问题。
+            </div>
+            <button class="btn btn-primary">点击咨询</button>
+            <button class="btn btn-outline">点击收藏</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== E. 掌上医生板块 ===== -->
+  <section class="section doctor-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>掌上医生</h2>
+        <div class="down-arrows">
+          <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 2 12 10 4 2"/></svg>
+          <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 2 12 10 4 2"/></svg>
+        </div>
+      </div>
+
+      <div class="doctor-cards">
+        <div class="doctor-profile fade-in-up">
+          <div class="doctor-photo" style="position:relative;overflow:hidden;">
+            <img src="images/1780717996314.jpg" alt="李医生" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="doc-name">李医生</div>
+          <div class="doc-title">执业兽医师</div>
+          <div class="doc-specialty">擅长：皮肤科、眼科<br>小动物内科疾病</div>
+        </div>
+
+        <div class="doctor-profile featured fade-in-up">
+          <div class="doc-arc"></div>
+          <div class="doctor-photo" style="position:relative;overflow:hidden;">
+            <img src="images/1780717996274.jpg" alt="丁医生" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="doc-name">丁医生</div>
+          <div class="doc-title">主任兽医师 · 10年经验</div>
+          <div class="doc-specialty" style="padding-bottom:48px;">擅长：普通内外科、骨科<br>小动物急救与重症监护</div>
+        </div>
+
+        <div class="doctor-profile fade-in-up">
+          <div class="doctor-photo" style="position:relative;overflow:hidden;">
+            <img src="images/1780717996294.jpg" alt="王医生" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="doc-name">王医生</div>
+          <div class="doc-title">执业兽医师</div>
+          <div class="doc-specialty">擅长：消化内科<br>宠物营养与保健</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== F. 智能问答板块 ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="qa-section-block">
+        <div class="section-header">
+          <h2>智能问答</h2>
+          <div class="down-arrows">
+            <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 2 12 10 4 2"/></svg>
+            <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 2 12 10 4 2"/></svg>
+          </div>
+        </div>
+        <div class="qa-area">
+          <div class="qa-input-wrap">
+            <input type="text" placeholder="输入你的养宠问题...">
+            <button class="btn btn-primary">提问</button>
+          </div>
+          <div class="qa-suggestions">
+            <span class="qa-suggestion">狗狗不吃东西怎么办？</span>
+            <span class="qa-suggestion">猫咪掉毛严重正常吗？</span>
+            <span class="qa-suggestion">仓鼠可以洗澡吗？</span>
+            <span class="qa-suggestion">鹦鹉怎么分辨公母？</span>
+            <span class="qa-suggestion">宠物疫苗多久打一次？</span>
+            <span class="qa-suggestion">如何训练狗狗定点大小便？</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="images/狗狗.svg" alt="宠伴" style="width:40px;height:40px;">
+          宠伴
+        </a>
+        <p>宠伴——你身边的宠物生活伙伴。<br>领养、商城、科普、社区，一站搞定。</p>
+      </div>
+      <div class="footer-col">
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#">平台介绍</a></li>
+          <li><a href="#">团队信息</a></li>
+          <li><a href="#">发展历程</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>加入我们</h4>
+        <ul>
+          <li><a href="#">成为志愿者</a></li>
+          <li><a href="#">救助合作</a></li>
+          <li><a href="#">商家入驻</a></li>
+          <li><a href="#">人才招聘</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>法律条款</h4>
+        <ul>
+          <li><a href="#">用户协议</a></li>
+          <li><a href="#">隐私政策</a></li>
+          <li><a href="#">领养协议</a></li>
+          <li><a href="#">版权声明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2026 宠伴 All Rights Reserved</p>
+      <p>ICP备案号：京ICP备2026XXXXXX号 | 技术支持：宠伴技术团队</p>
+    </div>
+  </div>
+</footer>
+
+<div class="back-to-top" title="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+</div>
+
+<script src="js/main.js?v=20260605"></script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>宠伴 - 详情</title>
+  <link rel="stylesheet" href="css/style.css?v=20260605">
+</head>
+<body class="page-detail">
+
+<!-- ===== 顶部导航栏 ===== -->
+<header class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/狗狗.svg" alt="宠伴" style="width:40px;height:40px;">
+    宠伴
+  </a>
+
+  <nav class="nav-links">
+    <a href="index.html">首页</a>
+    <a href="detail.html" class="active">详情</a>
+    <a href="community.html">社区</a>
+    <a href="shop.html">商城</a>
+  </nav>
+
+  <div class="nav-actions">
+    <div class="nav-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="text" placeholder="搜索宠物、商品...">
+    </div>
+    <div class="nav-avatar" title="个人中心">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </div>
+  </div>
+
+  <div class="nav-toggle">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- ===== 页面主体 ===== -->
+<main class="page-body">
+
+  <!-- ===== G. 领养与分类板块 ===== -->
+
+  <!-- 领养Banner轮播区（三页） -->
+  <section class="section">
+    <div class="container">
+      <div class="banner-slider" id="detailBannerSlider">
+        <div class="banner-slides" id="detailBannerSlides">
+          <!-- 第1页：可卡颇犬 -->
+          <div class="banner-slide">
+            <div class="adoption-hero">
+              <div class="adoption-text">
+                <p>可卡颇犬，聪明活泼的家庭伴侣</p>
+                <div class="adoption-breed">cockapoo</div>
+                <button class="btn-adopt">点击领养</button>
+              </div>
+              <div class="adoption-image">
+                <img src="images/36.JPG" alt="可卡颇犬" style="width:100%;height:100%;object-fit:contain;">
+              </div>
+            </div>
+          </div>
+          <!-- 第2页：金毛犬 -->
+          <div class="banner-slide">
+            <div class="adoption-hero">
+              <div class="adoption-text">
+                <p>金毛寻回犬，温柔忠诚的暖心伴侣</p>
+                <div class="adoption-breed">golden</div>
+                <button class="btn-adopt">点击领养</button>
+              </div>
+              <div class="adoption-image">
+                <img src="images/43.jpg" alt="金毛犬" style="width:100%;height:100%;object-fit:contain;">
+              </div>
+            </div>
+          </div>
+          <!-- 第3页：布偶猫 -->
+          <div class="banner-slide">
+            <div class="adoption-hero">
+              <div class="adoption-text">
+                <p>布偶猫，温柔粘人的仙女猫咪</p>
+                <div class="adoption-breed">ragdoll</div>
+                <button class="btn-adopt">点击领养</button>
+              </div>
+              <div class="adoption-image">
+                <img src="images/29.JPG" alt="布偶猫" style="width:100%;height:100%;object-fit:contain;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 轮播箭头 -->
+        <button class="carousel-arrow carousel-prev" id="detailBannerPrev" aria-label="上一页">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="carousel-arrow carousel-next" id="detailBannerNext" aria-label="下一页">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="banner-dots" id="detailBannerDots">
+          <span class="banner-dot active" data-index="0"></span>
+          <span class="banner-dot" data-index="1"></span>
+          <span class="banner-dot" data-index="2"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分类导航条 -->
+  <section class="category-section">
+    <div class="container">
+      <div class="category-header">
+        <h3>哪种宠物最适合你？</h3>
+      </div>
+
+      <div class="category-nav">
+        <div class="category-tabs">
+          <div class="category-tab active" data-series="dog">
+            <div class="tab-img">
+              <img src="images/21.JPG" alt="狗狗系列" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="tab-name">狗狗系列</div>
+            <div class="tab-sub">Dog Series</div>
+            <div class="tab-arrow">
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 6 7 9 10 6"/></svg>
+            </div>
+          </div>
+          <div class="category-tab" data-series="cat">
+            <div class="tab-img">
+              <img src="images/17.JPG" alt="猫猫系列" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="tab-name">猫猫系列</div>
+            <div class="tab-sub">Cat Series</div>
+            <div class="tab-arrow">
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 6 7 9 10 6"/></svg>
+            </div>
+          </div>
+          <div class="category-tab" data-series="bird">
+            <div class="tab-img">
+              <img src="images/26.JPG" alt="飞鸟系列" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="tab-name">飞鸟系列</div>
+            <div class="tab-sub">Bird Series</div>
+            <div class="tab-arrow">
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 6 7 9 10 6"/></svg>
+            </div>
+          </div>
+          <div class="category-tab" data-series="hamster">
+            <div class="tab-img">
+              <img src="images/42.jpg" alt="仓鼠系列" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="tab-name">仓鼠系列</div>
+            <div class="tab-sub">Hamster Series</div>
+            <div class="tab-arrow">
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 6 7 9 10 6"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 狗狗系列 -->
+  <section class="series-block" id="series-dog">
+    <div class="container">
+      <div class="series-title">狗狗系列</div>
+      <div class="series-showcase">
+        <div class="showcase-main">
+          <img src="images/39.JPG" alt="狗狗系列主图" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="showcase-side">
+          <div class="showcase-thumb">
+            <img src="images/31.JPG" alt="狗狗缩略图1" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="showcase-thumb">
+            <img src="images/19.JPG" alt="狗狗缩略图2" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+        </div>
+      </div>
+      <div class="series-footer">
+        <span class="series-label">宠伴狗狗系列</span>
+        <div class="series-actions">
+          <button class="btn-sm btn-more">查看更多</button>
+          <button class="btn-sm btn-adopt-sm">点击领养</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 猫猫系列 -->
+  <section class="series-block" id="series-cat">
+    <div class="container">
+      <div class="series-title">猫猫系列</div>
+      <div class="series-showcase">
+        <div class="showcase-main">
+          <img src="images/29.JPG" alt="猫猫系列主图" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="showcase-side">
+          <div class="showcase-thumb">
+            <img src="images/2.JPG" alt="猫猫缩略图1" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="showcase-thumb">
+            <img src="images/11.JPG" alt="猫猫缩略图2" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+        </div>
+      </div>
+      <div class="series-footer">
+        <span class="series-label">宠伴猫猫系列</span>
+        <div class="series-actions">
+          <button class="btn-sm btn-more">查看更多</button>
+          <button class="btn-sm btn-adopt-sm">点击领养</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 飞鸟系列 -->
+  <section class="series-block" id="series-bird">
+    <div class="container">
+      <div class="series-title">飞鸟系列</div>
+      <div class="series-showcase">
+        <div class="showcase-main">
+          <img src="images/26.JPG" alt="飞鸟系列主图" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="showcase-side">
+          <div class="showcase-thumb">
+            <img src="images/1780717204302.jpeg" alt="飞鸟缩略图1" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="showcase-thumb">
+            <img src="images/1780717216578.webp" alt="飞鸟缩略图2" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+        </div>
+      </div>
+      <div class="series-footer">
+        <span class="series-label">宠伴飞鸟系列</span>
+        <div class="series-actions">
+          <button class="btn-sm btn-more">查看更多</button>
+          <button class="btn-sm btn-adopt-sm">点击领养</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 仓鼠系列 -->
+  <section class="series-block" id="series-hamster">
+    <div class="container">
+      <div class="series-title">仓鼠系列</div>
+      <div class="series-showcase">
+        <div class="showcase-main">
+          <img src="images/42.jpg" alt="仓鼠系列主图" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="showcase-side">
+          <div class="showcase-thumb">
+            <img src="images/1780717721038.jpeg" alt="仓鼠缩略图1" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="showcase-thumb">
+            <img src="images/1780717705070.jpeg" alt="仓鼠缩略图2" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+        </div>
+      </div>
+      <div class="series-footer">
+        <span class="series-label">宠伴仓鼠系列</span>
+        <div class="series-actions">
+          <button class="btn-sm btn-more">查看更多</button>
+          <button class="btn-sm btn-adopt-sm">点击领养</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="images/狗狗.svg" alt="宠伴" style="width:40px;height:40px;">
+          宠伴
+        </a>
+        <p>宠伴——你身边的宠物生活伙伴。<br>领养、商城、科普、社区，一站搞定。</p>
+      </div>
+      <div class="footer-col">
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#">平台介绍</a></li>
+          <li><a href="#">团队信息</a></li>
+          <li><a href="#">发展历程</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>加入我们</h4>
+        <ul>
+          <li><a href="#">成为志愿者</a></li>
+          <li><a href="#">救助合作</a></li>
+          <li><a href="#">商家入驻</a></li>
+          <li><a href="#">人才招聘</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>法律条款</h4>
+        <ul>
+          <li><a href="#">用户协议</a></li>
+          <li><a href="#">隐私政策</a></li>
+          <li><a href="#">领养协议</a></li>
+          <li><a href="#">版权声明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2026 宠伴 All Rights Reserved</p>
+      <p>ICP备案号：京ICP备2026XXXXXX号 | 技术支持：宠伴技术团队</p>
+    </div>
+  </div>
+</footer>
+
+<div class="back-to-top" title="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+</div>
+
+<script src="js/main.js?v=20260605"></script>
+</body>
+</html>

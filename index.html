@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>宠伴 - 首页</title>
+  <link rel="stylesheet" href="css/style.css?v=20260605">
+</head>
+<body>
+
+<!-- ===== 一、顶部导航栏 ===== -->
+<header class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/狗狗.svg" alt="宠伴" style="width:40px;height:40px;">
+    宠伴
+  </a>
+
+  <nav class="nav-links">
+    <a href="index.html" class="active">首页</a>
+    <a href="detail.html">详情</a>
+    <a href="community.html">社区</a>
+    <a href="shop.html">商城</a>
+  </nav>
+
+  <div class="nav-actions">
+    <div class="nav-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="text" placeholder="搜索宠物、商品...">
+    </div>
+    <div class="nav-avatar" title="个人中心">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </div>
+  </div>
+
+  <div class="nav-toggle">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- ===== 页面主体 ===== -->
+<main class="page-body">
+
+  <!-- ===== 二、Banner区 ===== -->
+  <section class="home-banner">
+    <img src="images/5.jpg" alt="Banner" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;">
+    <div class="banner-content">
+      <h1 class="banner-title" style="color:#fff;">柔软的拥抱 温暖的陪伴<br>拥有一只毛茸茸 陪伴内心的孩童</h1>
+      <a href="detail.html" class="banner-btn">个性化推荐</a>
+    </div>
+  </section>
+
+  <!-- ===== 三、蓝色横栏 - "开启双向奔赴的爱" + "领养要求流程" ===== -->
+  <section class="adopt-strip">
+    <div class="container">
+      <div class="adopt-strip-inner">
+        <!-- 左侧 - 开启一场双向奔赴的爱 -->
+        <div class="adopt-strip-left">
+          <div class="adopt-strip-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="var(--white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 44 Q10 48 8 38Q6 28 14 24Q22 20 28 24"/>
+              <path d="M44 44 Q54 48 56 38Q58 28 50 24Q42 20 36 24"/>
+              <path d="M28 24 Q32 14 38 24"/>
+              <circle cx="24" cy="30" r="3" fill="var(--white)" stroke="none"/>
+              <circle cx="40" cy="30" r="3" fill="var(--white)" stroke="none"/>
+              <ellipse cx="32" cy="38" rx="5" ry="3" fill="var(--white)" stroke="none" opacity="0.6"/>
+              <path d="M28 42 Q32 46 36 42" stroke="var(--white)" stroke-width="1.8" fill="none"/>
+              <ellipse cx="32" cy="54" rx="16" ry="8" fill="var(--white)" stroke="none" opacity="0.3"/>
+            </svg>
+          </div>
+          <div>
+            <h2>开启一场双向奔赴的爱</h2>
+            <p>Start a two-way love journey</p>
+          </div>
+        </div>
+
+        <!-- 中间黄色分隔装饰 -->
+        <div class="adopt-strip-divider"></div>
+
+        <!-- 右侧 - 领养要求和流程 -->
+        <div class="adopt-strip-right">
+          <h3>领养要求和流程</h3>
+          <div class="adopt-strip-items">
+            <div class="adopt-strip-item">
+              <span class="strip-item-icon">
+                <svg viewBox="0 0 32 32" fill="none" stroke="var(--white)" stroke-width="2" stroke-linecap="round"><rect x="4" y="4" width="24" height="26" rx="3"/><line x1="10" y1="10" x2="22" y2="10"/><line x1="10" y1="16" x2="22" y2="16"/><line x1="10" y1="22" x2="16" y2="22"/></svg>
+              </span>
+              <span class="strip-item-label">要求</span>
+              <span class="strip-item-desc">了解领养条件与责任</span>
+            </div>
+            <div class="adopt-strip-item">
+              <span class="strip-item-icon">
+                <svg viewBox="0 0 32 32" fill="none" stroke="var(--white)" stroke-width="2" stroke-linecap="round"><circle cx="10" cy="10" r="4"/><path d="M10 14v12"/><circle cx="22" cy="12" r="3"/><circle cx="27" cy="20" r="3"/><circle cx="22" cy="27" r="3"/><path d="M22 15l2 3 3 3"/><path d="M25 20l-1 3-1 2"/></svg>
+              </span>
+              <span class="strip-item-label">流程</span>
+              <span class="strip-item-desc">一步步完成领养之旅</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 四、"关于我们"板块 ===== -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="about-brand-name">宠伴</h2>
+        <h3 class="about-section-title">关于我们</h3>
+        <p class="about-desc">
+          专注于宠物领养体验的综合性网页平台，整合信息与服务，<br>推动市场健康发展，帮宠物找家。
+        </p>
+      </div>
+
+      <div class="about-cards">
+        <!-- 左卡 - 功能齐全 -->
+        <div class="about-card fade-in-up">
+          <div class="about-icon">
+            <svg viewBox="0 0 56 56" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="8" y="14" width="40" height="30" rx="4"/>
+              <circle cx="28" cy="29" r="12"/>
+              <circle cx="28" cy="29" r="4" fill="var(--accent)" stroke="none"/>
+              <path d="M6 22h8M42 22h8"/>
+              <rect x="16" y="6" width="8" height="6" rx="2"/>
+            </svg>
+          </div>
+          <h4>功能齐全</h4>
+          <p>涵盖宠物领养、寄养、医疗等服务</p>
+        </div>
+        <!-- 中卡 - 精准定位 -->
+        <div class="about-card fade-in-up">
+          <div class="about-icon">
+            <svg viewBox="0 0 56 56" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="28" cy="24" r="12"/>
+              <path d="M28 36 L28 50"/>
+              <path d="M16 44 Q28 36 40 44"/>
+              <circle cx="28" cy="24" r="4" fill="var(--accent)" stroke="none"/>
+            </svg>
+          </div>
+          <h4>精准定位</h4>
+          <p>基于用户需求匹配宠物</p>
+        </div>
+        <!-- 右卡 - 操作便捷 -->
+        <div class="about-card fade-in-up">
+          <div class="about-icon">
+            <svg viewBox="0 0 56 56" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 12 L8 28L20 44"/>
+              <rect x="22" y="20" width="22" height="16" rx="3"/>
+              <line x1="28" y1="28" x2="36" y2="28"/>
+              <line x1="28" y1="34" x2="38" y2="34"/>
+              <circle cx="14" cy="28" r="3" fill="none"/>
+            </svg>
+          </div>
+          <h4>操作便捷</h4>
+          <p>简化领养流程，提升体验</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 五、"热门宠物"展示区（三页轮播） ===== -->
+  <section class="hot-pets-section">
+    <div class="container">
+      <div class="section-bar-title">
+        <span class="title-bar"></span>
+        <h2>热门宠物</h2>
+      </div>
+
+      <div class="hot-pets-slider" id="hotPetsSlider">
+        <div class="hot-pets-track" id="hotPetsTrack">
+          <!-- 页1 -->
+          <div class="hot-pets-page">
+            <div class="hot-pet-card">
+              <div class="hot-pet-img">
+                <img src="images/7.JPG" alt="球球" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="hot-pet-info">
+                <span class="pet-gender male">♂</span>
+                <h3>球球</h3>
+                <p>活泼可爱的棕色卷毛小狗，亲人又聪明</p>
+              </div>
+            </div>
+            <div class="hot-pet-card">
+              <div class="hot-pet-img">
+                <img src="images/24.JPG" alt="萌萌" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="hot-pet-info">
+                <span class="pet-gender female">♀</span>
+                <h3>萌萌</h3>
+                <p>温柔优雅的白色猫咪，安静乖巧</p>
+              </div>
+            </div>
+            <div class="hot-pet-card">
+              <div class="hot-pet-img">
+                <img src="images/4.JPG" alt="星星" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="hot-pet-info">
+                <span class="pet-gender male">♂</span>
+                <h3>星星</h3>
+                <p>阳光帅气的金色金毛，性格温顺大暖男</p>
+              </div>
+            </div>
+          </div>
+          <!-- 页2 -->
+          <div class="hot-pets-page">
+            <div class="hot-pet-card">
+              <div class="hot-pet-img">
+                <img src="images/12.JPG" alt="豆豆" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="hot-pet-info">
+                <span class="pet-gender male">♂</span>
+                <h3>豆豆</h3>
+                <p>短腿柯基小可爱，大耳朵圆屁股超萌</p>
+              </div>
+            </div>
+            <div class="hot-pet-card">
+              <div class="hot-pet-img">
+                <img src="images/15.JPG" alt="花花" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="hot-pet-info">
+                <span class="pet-gender female">♀</span>
+                <h3>花花</h3>
+                <p>三花小母猫，优雅灵动又粘人</p>
+              </div>
+            </div>
+            <div class="hot-pet-card">
+              <div class="hot-pet-img">
+                <img src="images/20.JPG" alt="乐乐" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="hot-pet-info">
+                <span class="pet-gender male">♂</span>
+                <h3>乐乐</h3>
+                <p>贵宾犬小卷毛，活泼好动爱撒娇</p>
+              </div>
+            </div>
+          </div>
+          <!-- 页3 -->
+          <div class="hot-pets-page">
+            <div class="hot-pet-card">
+              <div class="hot-pet-img">
+                <img src="images/47.jpeg" alt="桃子" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="hot-pet-info">
+                <span class="pet-gender female">♀</span>
+                <h3>桃子</h3>
+                <p>黄桃牡丹鹦鹉，色彩艳丽活泼亲人</p>
+              </div>
+            </div>
+            <div class="hot-pet-card">
+              <div class="hot-pet-img">
+                <img src="images/14.JPG" alt="布丁" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="hot-pet-info">
+                <span class="pet-gender male">♂</span>
+                <h3>布丁</h3>
+                <p>金丝熊仓鼠，呆萌可爱不占地方</p>
+              </div>
+            </div>
+            <div class="hot-pet-card">
+              <div class="hot-pet-img">
+                <img src="images/27.JPG" alt="大宝" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div class="hot-pet-info">
+                <span class="pet-gender male">♂</span>
+                <h3>大宝</h3>
+                <p>萨摩耶微笑天使，雪白毛茸茸超治愈</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 轮播箭头 -->
+        <button class="carousel-arrow carousel-prev" id="hotPetsPrev" aria-label="上一页">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="carousel-arrow carousel-next" id="hotPetsNext" aria-label="下一页">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <!-- 轮播圆点 -->
+        <div class="carousel-dots" id="hotPetsDots">
+          <span class="carousel-dot active" data-index="0"></span>
+          <span class="carousel-dot" data-index="1"></span>
+          <span class="carousel-dot" data-index="2"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 六、"热门文章" + "热门搜索"双栏区 ===== -->
+  <section class="hot-content-section">
+    <div class="container">
+      <div class="hot-content-grid">
+        <!-- 左栏 - 热门文章 -->
+        <div class="hot-articles">
+          <div class="section-bar-title">
+            <span class="title-bar"></span>
+            <h2>热门文章</h2>
+          </div>
+          <div class="article-card" id="articleCard">
+            <div class="article-img">
+              <img src="images/28.JPG" alt="热门文章" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="article-content">
+              <h3 class="article-title">澳洲坚果对宠物有毒，尤其是狗狗...</h3>
+              <p class="article-summary">
+                澳洲坚果（夏威夷果）对狗狗具有毒性，误食后可能出现呕吐、发热、肌肉震颤等症状。严重时可导致胰腺炎，甚至危及生命。请务必将坚果类零食放在宠物触及不到的地方。
+              </p>
+              <div class="article-meta">
+                <span class="article-date">3/9</span>
+                <span class="article-subtitle">狗吃夏威夷果怎么解毒</span>
+              </div>
+              <button class="article-btn" id="articleToggle">查看详情</button>
+              <div class="article-detail" id="articleDetail">
+                <div class="article-detail-inner">
+                  <h4>中毒症状</h4>
+                  <p>狗狗误食澳洲坚果后12小时内可能出现：呕吐、发热（体温升高）、肌肉震颤、后肢无力、站立困难、关节僵硬疼痛。大型犬通常需要摄入较多量才会出现明显症状，小型犬即使少量也可能产生严重反应。</p>
+                  <h4>紧急处理</h4>
+                  <p>1. 立即停止喂食任何食物；2. 尽快联系兽医或前往最近的宠物医院；3. 不要自行催吐，除非兽医明确指示；4. 记录误食时间和大致数量，帮助兽医判断。多数情况下及时就医预后良好，症状通常在24-48小时内缓解。</p>
+                  <h4>预防措施</h4>
+                  <p>将坚果类零食、烘焙食品（可能含夏威夷果）存放在宠物无法触及的高处或密封容器中。教育家庭成员和访客不要随意喂食宠物人类零食。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右栏 - 热门搜索 -->
+        <div class="hot-search">
+          <div class="section-bar-title">
+            <span class="title-bar"></span>
+            <h2>热门搜索</h2>
+          </div>
+          <div class="hot-search-list">
+            <!-- 玄凤鹦鹉 -->
+            <div class="hot-search-item">
+              <div class="search-item-img">
+                <img src="images/26.JPG" alt="玄凤鹦鹉" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+              </div>
+              <div class="search-item-text">
+                <h4>玄凤鹦鹉怕冷吗</h4>
+                <p>玄凤鹦鹉适宜温度18-28°C，冬季需保暖防寒...</p>
+              </div>
+            </div>
+            <!-- 暹罗猫 -->
+            <div class="hot-search-item">
+              <div class="search-item-img">
+                <img src="images/41.jpg" alt="暹罗猫" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+              </div>
+              <div class="search-item-text">
+                <h4>暹罗猫为什么叫暹罗</h4>
+                <p>暹罗猫原产于泰国（旧称暹罗），因此得名...</p>
+              </div>
+            </div>
+            <!-- 仓鼠 -->
+            <div class="hot-search-item">
+              <div class="search-item-img">
+                <img src="images/42.jpg" alt="仓鼠" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+              </div>
+              <div class="search-item-text">
+                <h4>仓鼠有寄生虫的表现</h4>
+                <p>仓鼠感染寄生虫常见症状：脱毛、瘙痒、消瘦...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== 七、底部Footer区（保留原设计） ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="images/狗狗.svg" alt="宠伴" style="width:40px;height:40px;">
+          宠伴
+        </a>
+        <p>宠伴——你身边的宠物生活伙伴。<br>领养、商城、科普、社区，一站搞定。</p>
+      </div>
+      <div class="footer-col">
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#">平台介绍</a></li>
+          <li><a href="#">团队信息</a></li>
+          <li><a href="#">发展历程</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>加入我们</h4>
+        <ul>
+          <li><a href="#">成为志愿者</a></li>
+          <li><a href="#">救助合作</a></li>
+          <li><a href="#">商家入驻</a></li>
+          <li><a href="#">人才招聘</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>法律条款</h4>
+        <ul>
+          <li><a href="#">用户协议</a></li>
+          <li><a href="#">隐私政策</a></li>
+          <li><a href="#">领养协议</a></li>
+          <li><a href="#">版权声明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2026 宠伴星球 All Rights Reserved &emsp; 京ICP备1401846x号-1 &emsp; 技术支持：脚本网络 &amp;&amp; OCWEB</p>
+    </div>
+  </div>
+</footer>
+
+<div class="back-to-top" title="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+</div>
+
+<script src="js/main.js?v=20260605"></script>
+</body>
+</html>

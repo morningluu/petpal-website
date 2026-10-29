@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>宠伴 - 商城</title>
+  <link rel="stylesheet" href="css/style.css?v=20260606">
+</head>
+<body>
+
+<!-- ===== 全局导航栏 ===== -->
+<header class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/狗狗.svg" alt="宠伴" style="width:40px;height:40px;">
+    宠伴
+  </a>
+
+  <nav class="nav-links">
+    <a href="index.html">首页</a>
+    <a href="detail.html">详情</a>
+    <a href="community.html">社区</a>
+    <a href="shop.html" class="active">商城</a>
+  </nav>
+
+  <div class="nav-actions">
+    <div class="nav-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="text" placeholder="搜索宠物、商品...">
+    </div>
+    <div class="nav-avatar" title="个人中心">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </div>
+  </div>
+
+  <div class="nav-toggle">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- ===== 页面主体 ===== -->
+<main class="page-body">
+
+  <!-- ① Banner -->
+  <section class="shop-banner">
+    <div class="container">
+      <h1>
+        <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="width:36px;height:36px;vertical-align:middle;margin-right:8px;"><circle cx="14" cy="31" r="2.5"/><circle cx="26" cy="31" r="2.5"/><path d="M2 4h5l6 17h13l4-10H10"/></svg>
+        宠物商城
+      </h1>
+      <p>精选优质宠物用品，给毛孩子最好的呵护</p>
+    </div>
+  </section>
+
+  <!-- 商城主体区域 -->
+  <section class="section">
+    <div class="container">
+      <div class="shop-layout">
+
+        <!-- ② 左侧列 -->
+        <div class="shop-left-col">
+        <aside class="shop-toolbar">
+          <h3>商品分类</h3>
+          <div class="shop-category active" data-filter="all">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            全部商品
+          </div>
+          <div class="shop-category" data-filter="food">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/></svg>
+            宠物食品
+          </div>
+          <div class="shop-category" data-filter="toy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+            宠物玩具
+          </div>
+          <div class="shop-category" data-filter="care">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            护理用品
+          </div>
+          <div class="shop-category" data-filter="supplies">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+            日常用品
+          </div>
+        </aside>
+
+        <!-- ②½ 左侧独立卡片 -->
+        <div class="shop-sidebar-cards">
+          <div class="sidebar-feature-card">
+            <div class="sidebar-feature-img-row">
+              <img src="images/9.JPG" alt="热门推荐1">
+              <img src="images/3.JPG" alt="热门推荐2">
+            </div>
+            <div class="sidebar-feature-info">
+              <h4>热门推荐</h4>
+              <p>本周热销爆款</p>
+            </div>
+          </div>
+          <div class="sidebar-feature-card" style="margin-top:20px;">
+            <div class="sidebar-feature-img">
+              <img src="images/1.JPG" alt="猜你喜欢">
+            </div>
+            <div class="sidebar-feature-info">
+              <h4>猜你喜欢</h4>
+              <p>为你精选好物</p>
+            </div>
+          </div>
+        </div>
+        </div><!-- /shop-left-col -->
+
+        <!-- ③ 商品区域（2列Grid，6个商品） -->
+        <div class="shop-products" id="shopProductGrid">
+          <!-- 商品1 -->
+          <div class="card product-card fade-in-up" data-category="food" data-id="1" data-name="天然全价狗粮 2.5kg" data-price="128">
+            <div class="card-img" style="position:relative;overflow:hidden;"><img src="images/3.JPG" alt="天然全价狗粮" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;"></div>
+            <div class="card-body">
+              <span class="card-tag">宠物食品</span>
+              <h3 class="card-title">天然全价狗粮 2.5kg</h3>
+              <p class="card-desc">进口天然原料，全面均衡营养，适合全年龄段犬只。</p>
+              <div class="product-price">¥128 <span>¥168</span></div>
+              <button class="btn btn-warm add-to-cart-btn">加入购物车</button>
+            </div>
+          </div>
+
+          <!-- 商品2 -->
+          <div class="card product-card fade-in-up" data-category="toy" data-id="2" data-name="互动逗猫棒套装" data-price="36">
+            <div class="card-img" style="position:relative;overflow:hidden;"><img src="images/8.JPG" alt="互动逗猫棒套装" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;"></div>
+            <div class="card-body">
+              <span class="card-tag">宠物玩具</span>
+              <h3 class="card-title">互动逗猫棒套装</h3>
+              <p class="card-desc">羽毛+铃铛组合设计，激发猫咪捕猎天性，增进互动乐趣。</p>
+              <div class="product-price">¥36 <span>¥49</span></div>
+              <button class="btn btn-warm add-to-cart-btn">加入购物车</button>
+            </div>
+          </div>
+
+          <!-- 商品3 -->
+          <div class="card product-card fade-in-up" data-category="care" data-id="3" data-name="宠物专用温和沐浴露 500ml" data-price="58">
+            <div class="card-img" style="position:relative;overflow:hidden;"><img src="images/1.JPG" alt="宠物专用温和沐浴露" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;"></div>            <div class="card-body">
+              <span class="card-tag">护理用品</span>
+              <h3 class="card-title">宠物专用温和沐浴露 500ml</h3>
+              <p class="card-desc">植物配方，温和不刺激，洗完毛发蓬松柔顺自带清香。</p>
+              <div class="product-price">¥58 <span>¥79</span></div>
+              <button class="btn btn-warm add-to-cart-btn">加入购物车</button>
+            </div>
+          </div>
+
+          <!-- 商品4 -->
+          <div class="card product-card fade-in-up" data-category="supplies" data-id="4" data-name="柔软保暖宠物窝 M号" data-price="96">
+            <div class="card-img" style="position:relative;overflow:hidden;"><img src="images/9.JPG" alt="柔软保暖宠物窝" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;"></div>            <div class="card-body">
+              <span class="card-tag">日常用品</span>
+              <h3 class="card-title">柔软保暖宠物窝 M号</h3>
+              <p class="card-desc">加厚毛绒面料，可拆洗设计，给宠物一个温暖舒适的小窝。</p>
+              <div class="product-price">¥96 <span>¥128</span></div>
+              <button class="btn btn-warm add-to-cart-btn">加入购物车</button>
+            </div>
+          </div>
+
+          <!-- 商品5 -->
+          <div class="card product-card fade-in-up" data-category="food" data-id="5" data-name="高蛋白无谷猫粮 1.8kg" data-price="158">
+            <div class="card-img" style="position:relative;overflow:hidden;"><img src="images/6.JPG" alt="高蛋白无谷猫粮" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;"></div>            <div class="card-body">
+              <span class="card-tag">宠物食品</span>
+              <h3 class="card-title">高蛋白无谷猫粮 1.8kg</h3>
+              <p class="card-desc">高肉含量无谷物配方，呵护猫咪泌尿系统健康。</p>
+              <div class="product-price">¥158 <span>¥198</span></div>
+              <button class="btn btn-warm add-to-cart-btn">加入购物车</button>
+            </div>
+          </div>
+
+          <!-- 商品6 -->
+          <div class="card product-card fade-in-up" data-category="toy" data-id="6" data-name="耐咬互动弹力球" data-price="29">
+            <div class="card-img" style="position:relative;overflow:hidden;"><img src="images/18.JPG" alt="耐咬互动弹力球" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;"></div>            <div class="card-body">
+              <span class="card-tag">宠物玩具</span>
+              <h3 class="card-title">耐咬互动弹力球</h3>
+              <p class="card-desc">食品级橡胶材质，耐咬耐磨，内置发声器让狗狗更爱玩。</p>
+              <div class="product-price">¥29 <span>¥45</span></div>
+              <button class="btn btn-warm add-to-cart-btn">加入购物车</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 购物车面板 ============ -->
+<aside class="cart-panel" id="cartPanel">
+  <div class="cart-panel__header">
+    <h3 class="cart-panel__title">
+      <svg class="cart-panel__title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+      </svg>
+      购物车
+    </h3>
+    <button class="cart-panel__close" id="cartClose" aria-label="关闭购物车">&times;</button>
+  </div>
+
+  <div class="cart-panel__items" id="cartItems">
+    <!-- JS动态渲染 -->
+  </div>
+
+  <div class="cart-panel__footer">
+    <div class="cart-panel__total">
+      <span>合计：</span>
+      <span class="cart-panel__total-price" id="cartTotal">¥0</span>
+    </div>
+    <div class="cart-panel__actions">
+      <button class="btn btn-outline btn-sm" id="cartClear">清空购物车</button>
+      <button class="btn btn-primary btn-sm" id="cartOrder">下单</button>
+    </div>
+  </div>
+</aside>
+
+<!-- 购物车悬浮按钮 -->
+<button class="cart-float-btn" id="cartFloatBtn" aria-label="购物车">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+  </svg>
+  <span class="cart-float-btn__count" id="cartFloatCount"></span>
+</button>
+
+<!-- ④ 页脚 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="images/狗狗.svg" alt="宠伴" style="width:40px;height:40px;">
+          宠伴
+        </a>
+        <p>宠伴——你身边的宠物生活伙伴。<br>领养、商城、科普、社区，一站搞定。</p>
+      </div>
+      <div class="footer-col">
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#">平台介绍</a></li>
+          <li><a href="#">团队信息</a></li>
+          <li><a href="#">发展历程</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>加入我们</h4>
+        <ul>
+          <li><a href="#">成为志愿者</a></li>
+          <li><a href="#">救助合作</a></li>
+          <li><a href="#">商家入驻</a></li>
+          <li><a href="#">人才招聘</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>法律条款</h4>
+        <ul>
+          <li><a href="#">用户协议</a></li>
+          <li><a href="#">隐私政策</a></li>
+          <li><a href="#">领养协议</a></li>
+          <li><a href="#">版权声明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2026 宠伴 All Rights Reserved</p>
+      <p>ICP备案号：京ICP备2026XXXXXX号 | 技术支持：宠伴技术团队</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=20260606"></script>
+</body>
+</html>
